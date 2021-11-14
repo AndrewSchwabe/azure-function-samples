@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "3eb1d04f-fcd8-49df-81d1-91dfc42d4808",
+		"name": "WebApi - Function Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Default",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/person/default",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{apiSegment}}",
+					"path": [
+						"person",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get People",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/person",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{apiSegment}}",
+					"path": [
+						"person"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Person By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/person/:personId",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{apiSegment}}",
+					"path": [
+						"person",
+						":personId"
+					],
+					"variable": [
+						{
+							"key": "personId",
+							"value": "f741eee0-6651-411a-8659-1a523f3bb67a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Person",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"f741eee0-6651-411a-8659-1a523f3bb67a\",\r\n    \"firstName\": \"Jane\",\r\n    \"lastName\": \"Doe\",\r\n    \"emailAddress\": \"JaneDoe@hotmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/person/",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{apiSegment}}",
+					"path": [
+						"person",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Person",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"a741eee0-6651-411a-8659-1a523f3bb67c\",\r\n    \"firstName\": \"Max\",\r\n    \"lastName\": \"Doe\",\r\n    \"emailAddress\": \"MaxDoe@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/person/",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{apiSegment}}",
+					"path": [
+						"person",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

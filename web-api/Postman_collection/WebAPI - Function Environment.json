@@ -1,0 +1,29 @@
+{
+	"id": "b4df5bbe-77d0-421a-a002-4f8846384e27",
+	"name": "WebAPI - Function - Localhost",
+	"values": [
+		{
+			"key": "host",
+			"value": "localhost",
+			"enabled": true
+		},
+		{
+			"key": "port",
+			"value": "7071",
+			"enabled": true
+		},
+		{
+			"key": "apiSegment",
+			"value": "/api",
+			"enabled": true
+		},
+		{
+			"key": "protocol",
+			"value": "http",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2021-11-14T19:30:40.584Z",
+	"_postman_exported_using": "Postman/8.7.0"
+}
