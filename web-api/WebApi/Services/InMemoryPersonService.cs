@@ -40,9 +40,23 @@ namespace WebApi.Services
             return people;
         }
 
-        public Person GetPerson(Guid id)
+        public Person GetById(Guid id)
         {
             return people.SingleOrDefault(p => p.Id == id);
+        }
+
+        public Person Upsert(Person person)
+        {
+            var existingPerson = people.SingleOrDefault(p => p.Id == person.Id);
+
+            if (existingPerson == null && people.TryAdd(person)) return person;
+            else {
+                existingPerson.FirstName = person.FirstName;
+                existingPerson.LastName = person.LastName; 
+                existingPerson.EmailAddress = person.EmailAddress;
+            }
+
+            return existingPerson;
         }
     }
 }

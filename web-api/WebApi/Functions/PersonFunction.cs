@@ -4,7 +4,6 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using WebApi.Models;
-using System.Collections.Concurrent;
 using WebApi.Services;
 using System;
 
@@ -14,7 +13,7 @@ namespace WebApi.Functions
     {
 
         private readonly IPersonService personService;
-        
+
         public PersonFunction(IPersonService personService)
         {
             this.personService = personService;
@@ -43,7 +42,15 @@ namespace WebApi.Functions
             ILogger log)
         {
             if (Guid.Empty == id) return new BadRequestObjectResult("Id passed is default value");
-            return new OkObjectResult(personService.GetPerson(id));
+            return new OkObjectResult(personService.GetById(id));
+        }
+
+        [FunctionName("upsertPerson")]
+        public IActionResult UpsertPerson(
+            [HttpTrigger(AuthorizationLevel.Function, "put", Route = "person")] Person personToUpsert,
+            ILogger log)
+        {
+            return new OkObjectResult(personService.Upsert(personToUpsert));
         }
     }
 }

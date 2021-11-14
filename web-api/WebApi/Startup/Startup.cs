@@ -10,7 +10,7 @@ namespace WebApi.Startup
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            builder.Services.AddTransient<IPersonService, InMemoryPersonService>();
+            builder.Services.AddSingleton<IPersonService, InMemoryPersonService>();
         }
     }
 }

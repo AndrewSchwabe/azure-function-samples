@@ -7,6 +7,8 @@ namespace WebApi.Services
     public interface IPersonService
     {
         IEnumerable<Person> GetPeople();
-        Person GetPerson(Guid id);
+        Person GetById(Guid id);
+        Person Upsert(Person person);
+
     }
 }
