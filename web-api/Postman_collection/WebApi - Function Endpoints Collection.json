@@ -6,127 +6,232 @@
 	},
 	"item": [
 		{
-			"name": "Get Default",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/person/default",
-					"protocol": "{{protocol}}",
-					"host": [
-						"{{host}}"
-					],
-					"port": "{{port}}{{apiSegment}}",
-					"path": [
-						"person",
-						"default"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get People",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/person",
-					"protocol": "{{protocol}}",
-					"host": [
-						"{{host}}"
-					],
-					"port": "{{port}}{{apiSegment}}",
-					"path": [
-						"person"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get Person By Id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/person/:personId",
-					"protocol": "{{protocol}}",
-					"host": [
-						"{{host}}"
-					],
-					"port": "{{port}}{{apiSegment}}",
-					"path": [
-						"person",
-						":personId"
-					],
-					"variable": [
-						{
-							"key": "personId",
-							"value": "f741eee0-6651-411a-8659-1a523f3bb67a"
+			"name": "Person API",
+			"item": [
+				{
+					"name": "Get Default",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/person/default",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{apiSegment}}",
+							"path": [
+								"person",
+								"default"
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Update Person",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"f741eee0-6651-411a-8659-1a523f3bb67a\",\r\n    \"firstName\": \"Jane\",\r\n    \"lastName\": \"Doe\",\r\n    \"emailAddress\": \"JaneDoe@hotmail.com\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/person/",
-					"protocol": "{{protocol}}",
-					"host": [
-						"{{host}}"
-					],
-					"port": "{{port}}{{apiSegment}}",
-					"path": [
-						"person",
-						""
-					]
+				{
+					"name": "Get People",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/person",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{apiSegment}}",
+							"path": [
+								"person"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Person By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/person/:personId",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{apiSegment}}",
+							"path": [
+								"person",
+								":personId"
+							],
+							"variable": [
+								{
+									"key": "personId",
+									"value": "f741eee0-6651-411a-8659-1a523f3bb67a"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Person",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"f741eee0-6651-411a-8659-1a523f3bb67a\",\r\n    \"firstName\": \"Jane\",\r\n    \"lastName\": \"Doe\",\r\n    \"emailAddress\": \"JaneDoe@hotmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/person/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{apiSegment}}",
+							"path": [
+								"person",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Person",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"a741eee0-6651-411a-8659-1a523f3bb67c\",\r\n    \"firstName\": \"Max\",\r\n    \"lastName\": \"Doe\",\r\n    \"emailAddress\": \"MaxDoe@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/person/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{apiSegment}}",
+							"path": [
+								"person",
+								""
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Create Person",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": \"a741eee0-6651-411a-8659-1a523f3bb67c\",\r\n    \"firstName\": \"Max\",\r\n    \"lastName\": \"Doe\",\r\n    \"emailAddress\": \"MaxDoe@gmail.com\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "DateTime API",
+			"item": [
+				{
+					"name": "Get DateTime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/datetime",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{apiSegment}}",
+							"path": [
+								"datetime"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/person/",
-					"protocol": "{{protocol}}",
-					"host": [
-						"{{host}}"
-					],
-					"port": "{{port}}{{apiSegment}}",
-					"path": [
-						"person",
-						""
-					]
+				{
+					"name": "Post DateTime",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/datetime",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{apiSegment}}",
+							"path": [
+								"datetime"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put DateTime",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/datetime",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{apiSegment}}",
+							"path": [
+								"datetime"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch DateTime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/datetime",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{apiSegment}}",
+							"path": [
+								"datetime"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete DateTime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/datetime",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{apiSegment}}",
+							"path": [
+								"datetime"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }
