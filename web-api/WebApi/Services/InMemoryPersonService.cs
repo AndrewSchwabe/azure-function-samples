@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using WebApi.Models;
@@ -37,6 +38,11 @@ namespace WebApi.Services
         public IEnumerable<Person> GetPeople()
         {
             return people;
+        }
+
+        public Person GetPerson(Guid id)
+        {
+            return people.SingleOrDefault(p => p.Id == id);
         }
     }
 }

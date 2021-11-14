@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using WebApi.Models;
 using System.Collections.Concurrent;
 using WebApi.Services;
+using System;
 
 namespace WebApi.Functions
 {
@@ -33,6 +34,16 @@ namespace WebApi.Functions
             ILogger log)
         {
             return new OkObjectResult(personService.GetPeople());
+        }
+
+        [FunctionName("getPersonById")]
+        public IActionResult GetPersonById(
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "person/{id:guid}")] HttpRequest req,
+            Guid id,
+            ILogger log)
+        {
+            if (Guid.Empty == id) return new BadRequestObjectResult("Id passed is default value");
+            return new OkObjectResult(personService.GetPerson(id));
         }
     }
 }
