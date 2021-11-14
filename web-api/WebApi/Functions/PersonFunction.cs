@@ -5,32 +5,18 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using WebApi.Models;
 using System.Collections.Concurrent;
+using WebApi.Services;
 
 namespace WebApi.Functions
 {
     public class PersonFunction
     {
-        private readonly IProducerConsumerCollection<Person> people = new ConcurrentBag<Person>();
 
-        public PersonFunction()
+        private readonly IPersonService personService;
+        
+        public PersonFunction(IPersonService personService)
         {
-            people.TryAdd(new Person { 
-                FirstName = "Andrew",
-                LastName = "Schwabe",
-                EmailAddress = "schwabea530@gmail.com"
-            });
-            people.TryAdd(new Person
-            {
-                FirstName = "John",
-                LastName = "Doe",
-                EmailAddress = "JohnDoe@gmail.com"
-            });
-            people.TryAdd(new Person
-            {
-                FirstName = "Jane",
-                LastName = "Doe",
-                EmailAddress = "JaneDoe@gmail.com"
-            });
+            this.personService = personService;
         }
 
         [FunctionName("personDefault")]
@@ -46,7 +32,7 @@ namespace WebApi.Functions
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = "person")] HttpRequest req,
             ILogger log)
         {
-            return new OkObjectResult(people);
+            return new OkObjectResult(personService.GetPeople());
         }
     }
 }
