@@ -18,8 +18,8 @@ namespace Schedule.Functions
 
             var response = await client.GetAsync(new Uri("https://google.com"));
 
-            if (!response.IsSuccessStatusCode) log.LogCritical($"Website ping recieved unsuccessful response of: {response.StatusCode}");
-            log.LogInformation($"Website ping recieved successful response of: {response.StatusCode}");
+            if (!response.IsSuccessStatusCode) log.LogCritical($"Website ping received unsuccessful response of: {response.StatusCode}");
+            log.LogInformation($"Website ping received successful response of: {response.StatusCode}");
         }
     }
 }
