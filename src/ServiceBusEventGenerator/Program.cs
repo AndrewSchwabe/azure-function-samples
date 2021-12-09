@@ -1,20 +1,19 @@
 ﻿using Microsoft.Azure.ServiceBus;
-using ServiceBusModel;
+using ServiceBusEventGenerator.Utility;
 using System.Text.Json;
 
-var connectionString = "<ServiceBus connection string>";
+var connectionString = "<ServiceBus Connection String>";
 var queueName = "greeter";
 
 var queueClient = new QueueClient(connectionString, queueName);
 
-var person = new Person {
+var peopleToGreet = PersonUtility.GetRandomPeople();
 
-    FirstName = "Andrew",
-    LastName =  "Test"
-};
+var messages = peopleToGreet
+    .Select(p => new Message
+    {
+        Body = JsonSerializer.SerializeToUtf8Bytes(p)
+    })
+    .ToList();
 
-var message = new Message {
-    Body =  JsonSerializer.SerializeToUtf8Bytes(person)
-};
-
-await queueClient.SendAsync(message);
+await queueClient.SendAsync(messages);
