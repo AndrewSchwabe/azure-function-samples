@@ -1,0 +1,11 @@
+C:\Projects\azure-function-samples\src\ServiceBusModel\bin\Debug\net6.0\ServiceBusModel.deps.json
+C:\Projects\azure-function-samples\src\ServiceBusModel\bin\Debug\net6.0\ServiceBusModel.dll
+C:\Projects\azure-function-samples\src\ServiceBusModel\bin\Debug\net6.0\ref\ServiceBusModel.dll
+C:\Projects\azure-function-samples\src\ServiceBusModel\bin\Debug\net6.0\ServiceBusModel.pdb
+C:\Projects\azure-function-samples\src\ServiceBusModel\obj\Debug\net6.0\ServiceBusModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\azure-function-samples\src\ServiceBusModel\obj\Debug\net6.0\ServiceBusModel.AssemblyInfoInputs.cache
+C:\Projects\azure-function-samples\src\ServiceBusModel\obj\Debug\net6.0\ServiceBusModel.AssemblyInfo.cs
+C:\Projects\azure-function-samples\src\ServiceBusModel\obj\Debug\net6.0\ServiceBusModel.csproj.CoreCompileInputs.cache
+C:\Projects\azure-function-samples\src\ServiceBusModel\obj\Debug\net6.0\ServiceBusModel.dll
+C:\Projects\azure-function-samples\src\ServiceBusModel\obj\Debug\net6.0\ref\ServiceBusModel.dll
+C:\Projects\azure-function-samples\src\ServiceBusModel\obj\Debug\net6.0\ServiceBusModel.pdb
