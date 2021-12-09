@@ -3,8 +3,8 @@ First off, welcome to the repository! This repository is being established to pr
 
 The desire is to provide simple, easy-to-follow examples of the following Azure Function triggers:
 * HTTP Trigger
-* Service Bus Trigger
 * Timer Trigger
+* Service Bus Trigger
 * Azure Cosmos DB Trigger
 * Blob storage Trigger
 
