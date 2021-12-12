@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusConsumer", "src\ServiceBusConsumer\ServiceBusConsumer.csproj", "{E8B5CC2E-275A-4E78-8C2B-C24CC49FB9A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,10 @@ Global
 		{E51CDCB4-1FE8-426A-B0C6-A3DD8D3C9CE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E51CDCB4-1FE8-426A-B0C6-A3DD8D3C9CE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E51CDCB4-1FE8-426A-B0C6-A3DD8D3C9CE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8B5CC2E-275A-4E78-8C2B-C24CC49FB9A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8B5CC2E-275A-4E78-8C2B-C24CC49FB9A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8B5CC2E-275A-4E78-8C2B-C24CC49FB9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8B5CC2E-275A-4E78-8C2B-C24CC49FB9A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +55,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{82A31232-8AAF-4CF6-9CC6-C46E1B215EEB} = {C95830B2-2CFA-4608-B451-B8E92AC90FD0}
 		{E51CDCB4-1FE8-426A-B0C6-A3DD8D3C9CE4} = {C95830B2-2CFA-4608-B451-B8E92AC90FD0}
+		{E8B5CC2E-275A-4E78-8C2B-C24CC49FB9A0} = {C95830B2-2CFA-4608-B451-B8E92AC90FD0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D015401-1A66-49DB-BA7E-9706326E8077}
