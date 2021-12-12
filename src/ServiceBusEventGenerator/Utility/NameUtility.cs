@@ -113,11 +113,19 @@
 
         private static Random Random => new Random();
 
+        /// <summary>
+        /// Utility to return a mock first name from the private list
+        /// </summary>
+        /// <returns>A mock first name</returns>
         public static string GetFirstName()
         {
             return FirstNames[Random.Next(0, FirstNames.Count - 1)];
         }
 
+        /// <summary>
+        /// Utility to return a mock last name from the private list
+        /// </summary>
+        /// <returns>A mock last name</returns>
         public static string GetLastName()
         {
             return LastNames[Random.Next(0, LastNames.Count - 1)];
