@@ -196,7 +196,7 @@
 				{
 					"name": "Patch DateTime",
 					"request": {
-						"method": "GET",
+						"method": "PATCH",
 						"header": [],
 						"url": {
 							"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/datetime",
@@ -215,7 +215,107 @@
 				{
 					"name": "Delete DateTime",
 					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/datetime",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{apiSegment}}",
+							"path": [
+								"datetime"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "JavaScript API",
+			"item": [
+				{
+					"name": "Get DateTime",
+					"request": {
 						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/datetime",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{apiSegment}}",
+							"path": [
+								"datetime"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post DateTime",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/datetime",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{apiSegment}}",
+							"path": [
+								"datetime"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put DateTime",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/datetime",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{apiSegment}}",
+							"path": [
+								"datetime"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch DateTime",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/datetime",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}{{apiSegment}}",
+							"path": [
+								"datetime"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete DateTime",
+					"request": {
+						"method": "DELETE",
 						"header": [],
 						"url": {
 							"raw": "{{protocol}}://{{host}}:{{port}}{{apiSegment}}/datetime",
