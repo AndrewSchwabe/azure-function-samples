@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "src\web-api\WebAp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceBus", "ServiceBus", "{C95830B2-2CFA-4608-B451-B8E92AC90FD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusEventGenerator", "src\ServiceBusEventGenerator\ServiceBusEventGenerator.csproj", "{82A31232-8AAF-4CF6-9CC6-C46E1B215EEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBusEventGenerator", "src\ServiceBusEventGenerator\ServiceBusEventGenerator.csproj", "{82A31232-8AAF-4CF6-9CC6-C46E1B215EEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusModel", "src\ServiceBusModel\ServiceBusModel.csproj", "{E51CDCB4-1FE8-426A-B0C6-A3DD8D3C9CE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBusModel", "src\ServiceBusModel\ServiceBusModel.csproj", "{E51CDCB4-1FE8-426A-B0C6-A3DD8D3C9CE4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{839B1DE6-5361-49A3-9AAA-D34ECC28DE32}"
 	ProjectSection(SolutionItems) = preProject
@@ -20,7 +20,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusConsumer", "src\ServiceBusConsumer\ServiceBusConsumer.csproj", "{E8B5CC2E-275A-4E78-8C2B-C24CC49FB9A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBusConsumer", "src\ServiceBusConsumer\ServiceBusConsumer.csproj", "{E8B5CC2E-275A-4E78-8C2B-C24CC49FB9A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobStorage", "src\BlobStorage\BlobStorage.csproj", "{D3D9CBB6-18F9-439D-97A4-0D73CDC33802}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +50,10 @@ Global
 		{E8B5CC2E-275A-4E78-8C2B-C24CC49FB9A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8B5CC2E-275A-4E78-8C2B-C24CC49FB9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8B5CC2E-275A-4E78-8C2B-C24CC49FB9A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3D9CBB6-18F9-439D-97A4-0D73CDC33802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D9CBB6-18F9-439D-97A4-0D73CDC33802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D9CBB6-18F9-439D-97A4-0D73CDC33802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D9CBB6-18F9-439D-97A4-0D73CDC33802}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
