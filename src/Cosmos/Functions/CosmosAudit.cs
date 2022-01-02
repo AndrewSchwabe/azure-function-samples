@@ -3,7 +3,7 @@ using Microsoft.Azure.Documents;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 
-namespace Cosmos
+namespace Cosmos.Functions
 {
     public static class CosmosAudit
     {
