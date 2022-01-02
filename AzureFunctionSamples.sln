@@ -24,6 +24,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBusConsumer", "src\S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobStorage", "src\BlobStorage\BlobStorage.csproj", "{D3D9CBB6-18F9-439D-97A4-0D73CDC33802}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos", "src\Cosmos\Cosmos.csproj", "{CA653D2A-93B7-4E07-A021-4D74055EA865}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,10 @@ Global
 		{D3D9CBB6-18F9-439D-97A4-0D73CDC33802}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3D9CBB6-18F9-439D-97A4-0D73CDC33802}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3D9CBB6-18F9-439D-97A4-0D73CDC33802}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA653D2A-93B7-4E07-A021-4D74055EA865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA653D2A-93B7-4E07-A021-4D74055EA865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA653D2A-93B7-4E07-A021-4D74055EA865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA653D2A-93B7-4E07-A021-4D74055EA865}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
