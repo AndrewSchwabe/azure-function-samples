@@ -1,10 +1,8 @@
-using System;
 using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
 using ServiceBusModel;
 
-namespace ServiceBusConsumer
+namespace ServiceBusConsumer.Functions
 {
     public static class GreeterConsumer
     {
